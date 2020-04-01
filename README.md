@@ -13,3 +13,9 @@ token = "[API Token]"
 Amb Python instal·lat, obrim una terminal, anem a la carpeta on tenim l'script i entrem:
 
     py .\req.py [ID de l'escaleta]
+   
+## ToDo
+1. Manipular dades per generar un fitxer .lst
+    * També cal trobar alguna manera de tenir la duració dels fitxers per al Zara
+2. Fer funcionar les variables "key", "token" i "RundownID" com a inputs
+3. Crear una GUI
