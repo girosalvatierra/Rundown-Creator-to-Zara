@@ -9,8 +9,10 @@ Per fer-lo funcionar, necessitem [Python](https://www.python.org/downloads/) i e
 ```
 $ pip install httpx
 ```
-
 ## Utilització
+Executem l'script "req2.py" i seguim les instruccions en pantalla, podem trobar les nostres dades per accedir a l'API a https://rundowncreator.com/uabcm/Settings.php?Page=MySettings-API
+
+## Utilització req.py (antic)
 Primer cal editar l'script amb un editor de text per posar-hi les nostres dades per accedir a l'API, les podem trobar a https://rundowncreator.com/uabcm/Settings.php?Page=MySettings-API i les completem així:
 
 ```python
