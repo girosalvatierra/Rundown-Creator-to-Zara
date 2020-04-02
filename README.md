@@ -22,6 +22,8 @@ token = "[API Token]"
 Obrim una terminal, des de la carpeta on tenim l'script i entrem:
 
     py .\req.py [ID de l'escaleta]
+    
+Podem fer servir l'escaleta ID=234 per provar-ho
    
 ## ToDo
 1. Manipular dades per generar un fitxer .lst
