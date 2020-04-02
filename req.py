@@ -4,28 +4,28 @@ import sys
 
 key = ""
 token = ""
-url = "https://rundowncreator.com/uabcm/API.php?APIKey=" + key + "&APIToken=" + token + "&Action=getRows&RundownID={}"
+url = "https://rundowncreator.com/uabcm/API.php?APIKey=" + key + "&APIToken=" + token + "&Action=getObjects&type=audio&OrderBy=Position&RundownID={}"
 
 
-
+#loop principal
 def main(rundown):
     r = httpx.get(url.format(rundown))
-    data = json.loads(r.text)
+    data = json.loads(r.text) 
 
     filtered = []
     for row in data:
-        filtered.append({
-                'font': row['font'],
-            })
+        filtered.append(row['Payload'])
 
-    print(filtered)
+    print('Output:')
+    output = []
+    for row in filtered:
+        output.append({
+              'filename': row['filename'],
+              'duration': row['duration'],
+        })
+    print(output)
 
-
-
-
-
-
-
+#no tocar
 if __name__ == "__main__":
     try:
         main(sys.argv[1])
