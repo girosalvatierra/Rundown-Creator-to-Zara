@@ -28,5 +28,5 @@ Podem fer servir l'escaleta ID=234 per provar-ho
 ## ToDo
 1. Manipular dades per generar un fitxer .lst
     * També cal trobar alguna manera de tenir la duració dels fitxers per al Zara
-2. Fer funcionar les variables "key", "token" i "RundownID" com a inputs
+2. ~Fer funcionar les variables "key", "token" i "RundownID" com a inputs~ (Funciona a req2.py)
 3. Crear una GUI
