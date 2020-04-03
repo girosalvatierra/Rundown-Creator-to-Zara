@@ -12,6 +12,11 @@ Per fer-lo funcionar, necessitem [Python](https://www.python.org/downloads/) i e
 ```bash
 pip install httpx
 ```
+3. Obrim una terminal (cmd a Windows) i instal·lem mutagen
+
+```bash
+pip install mutagen
+```
 
 ## Utilització
 
