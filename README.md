@@ -9,18 +9,21 @@ Per fer-lo funcionar, necessitem [Python](https://www.python.org/downloads/) i e
 1. Instal·lem Python, marquem l'opció "Add to PATH"
 2. Obrim una terminal (cmd a Windows) i instal·lem httpx
 
-```bash
-pip install httpx
-```
+    ```bash
+    pip install httpx
+    ```
+
 3. Obrim una terminal (cmd a Windows) i instal·lem mutagen
 
-```bash
-pip install mutagen
-```
+    ```bash
+    pip install mutagen
+    ```
 
 ## Utilització
 
-Executem l'script "req2.py" i seguim les instruccions en pantalla, podem trobar les nostres dades per accedir a l'API a <https://rundowncreator.com/uabcm/Settings.php?Page=MySettings-API>
+Executem l'script "rdc2z.py" i seguim les instruccions en pantalla, es crearà el fitxer .lst al mateix directori on hi tenim l'script.
+
+Podem trobar les nostres dades per accedir a l'API a <https://rundowncreator.com/uabcm/Settings.php?Page=MySettings-API>
 
 ## Utilització (antic)
 
