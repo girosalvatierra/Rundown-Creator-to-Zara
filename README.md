@@ -5,7 +5,7 @@ De moment, només tenim un script.
 Per fer-lo funcionar, necessitem [Python](https://www.python.org/downloads/) i el paquet [httpx](https://pypi.org/project/httpx/).
 
 1. Instal·lem Python, marquem l'opció "Add to PATH"
-2. Obrim una terminal i instal·lem httpx
+2. Obrim una terminal (cmd a Windows) i instal·lem httpx
 ```
 $ pip install httpx
 ```
