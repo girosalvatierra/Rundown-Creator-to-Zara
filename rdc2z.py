@@ -32,7 +32,7 @@ for row in filtered:
 # Crea una llista 'lst' amb una entrada per cada objecte i recompte d'objectes
 lst = []
 for row in output:
-    lst.append(f"{row['duration']} {row['filename']}\n")
+    lst.append(f"{row['duration']}	{row['filename']}\n")
 n = len(lst)
 
 # Estableix el nom del fitxer (dataihora.lst)
