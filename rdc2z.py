@@ -35,9 +35,21 @@ for row in output:
     lst.append(f"{row['duration']}	{row['filename']}\n")
 n = len(lst)
 
-# Estableix el nom del fitxer (dataihora.lst)
+# Carrega la resposta de l'API getRundowns a 'data2'
+url2 = "https://rundowncreator.com/uabcm/API.php?APIKey=" + key + "&APIToken=" + token + "&Action=getRundowns&RundownID=" + rdid
+r2 = httpx.get(url2.format())
+data2 = json.loads(r2.text)
+
+# Pren el títol de l'escaleta
+titol = []
+for cell in data2:
+    titol.append(cell['Title'])
+titolescaleta=str(titol)
+titolescaleta=titolescaleta[2:len(titolescaleta)-2]+"_"
+
+# Estableix el nom del fitxer (titol_data_hora.lst)
 date = datetime.now().strftime("%d-%m-%Y_%H.%M.%S")
-FILENAME = (date) + ".lst"
+FILENAME = (titolescaleta) + (date) + ".lst"
 
 # Desa el fitxer .lst
 with open(FILENAME, 'w') as f:
