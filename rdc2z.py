@@ -2,11 +2,12 @@ import json
 import httpx
 from datetime import datetime
 
-# Recupera les claus d'API des d'un fitxer de text
-with open("claus.txt") as json_file:
-    claus = json.load(json_file)
-    key = claus['key']
-    token = claus['token']
+# Recupera les claus d'API des d'un fitxer de text penjat a uabcm (no cal tenir un fitxer amb l'script)
+passi = "https://campusmedia.uab.cat/claus.txt"
+clauer = httpx.get(passi.format())
+claus = json.loads(clauer.text)
+key = claus['key']
+token = claus['token']
 
 # Input RundownID
 rdid = input('Entra la ID de l\'escaleta: ')
